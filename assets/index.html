@@ -1,0 +1,198 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script type="text/javascript">
+        function loadURL()
+        {
+            //alert("Call");
+			var s = document.getElementById("dynamic_url").value;
+			//document.write(s);
+			//alert(""+s);
+			this.document.location.href = s;
+        }
+    </script>
+
+    <style>
+			body
+			{
+				background:#f2f2f2;
+			}
+			.cardview
+			{
+				padding: 0px 0px 10px 0px;
+				box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+				transition: 0.3s;
+				margin-top:20px;
+				background:#FFFFFF;
+			}
+			.box-padding
+			{
+				margin: 0px 20px 0px 20px;
+				padding-top:5px;
+			}
+			.box-padding a
+			{
+				margin: 0px !important;
+			}
+			a
+			{
+				margin: 0px 20px 0px 20px;
+				text-decoration: none;
+				color: #0D47A1;
+				font-weight: 400;
+			}
+			hr
+			{
+			    border-style: solid;
+				border-width: 0.4;
+				border-color: #E1E1E1;
+			}
+			input[type=text]
+			{
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				box-sizing: border-box;
+			}
+			input[type=button]
+			{
+			  background-color: #4CAF50;
+			  border: none;
+			  color: white;
+			  padding: 16px 32px;
+			  text-decoration: none;
+			  margin: 4px 0px;
+			  cursor: pointer;
+			}
+			img
+			{
+			    width: 100%; /* width of container */
+                height: 200px; /* height of container */
+                object-fit: cover;
+                object-position: 100% 0px;
+			}
+		</style>
+</head>
+
+<body>
+
+<div class="cardview">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Epcot_Page_Banner.jpg" >
+    <div class="box-padding">
+        <h1>Welcome! to "Modern Web to App"</h1>
+        <h4>A State of the Art Technology which renders your web in form of Mobile App.</h4>
+        <h5>The fastest, simplest way to transform your website into mobile</h5>
+        <!--<a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" >Download</a>-->
+        <!--<a href="https://postimages.org/" >Upload</a>-->
+    </div>
+</div>
+
+<div class="cardview">
+    <div class="box-padding">
+        <h1>Render Your Website</h1>
+        <p>Enter you live site URL in below specified box and check your site getting render over mobile app.</p>
+        <input type="text" id="dynamic_url" value="https://waterify.app/">
+        <center><input type="button" onclick="loadURL()" value="Open URL"/></center>
+    </div>
+
+</div>
+
+<div class="cardview">
+    <div class="box-padding">
+        <h1>Download</h1>
+        <p>Modern Web to App supports download feature as well. Try to download sample PDF file by clicking download link below</p>
+    </div>
+    <hr>
+    <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">DOWNLOAD</a>
+
+</div>
+
+<div class="cardview">
+    <div class="box-padding">
+        <h1>Try Google Search</h1>
+        <p>Click on below link to have Google Search bar in action.</p>
+    </div>
+    <hr>
+    <a href="https://www.google.com">VISIT GOOGLE</a>
+</div>
+
+
+
+<div class="cardview">
+    <div class="box-padding">
+        <h1>View Videos</h1>
+        <p>Modern Web to App supports rendering of any type of videos, click on below specified link and render YouTube videos.</p>
+    </div>
+    <hr>
+    <a href="https://www.youtube.com/">TRY VIDEO</a>
+</div>
+
+<div class="cardview">
+    <div class="box-padding">
+        <h1>Go! Geo Positioning</h1>
+        <p>Modern Web to App supports geo positioning, try accessing your current location and render it over Google Map after providing access permissions.</p>
+    </div>
+    <hr>
+    <a href="https://browserleaks.com/geo">TRY GEOLOCATION</a>
+    <a href="https://www.google.com/maps/">TRY MAPS</a>
+</div>
+
+<div class="cardview">
+    <div class="box-padding">
+        <h1>Intents</h1>
+        <p>You can add a special link to your HTML file and you will be able to run appropriate external app to perform some action. For example send an email or call somebody. Following intents are supported.</p>
+    </div>
+    <div class="box-padding">
+        <p>E-mail:</p>
+        <a href="mailto:youremail@example.com?subject=Hello">mailto:youremail@example.com?subject=Hello</a></br>
+    </div>
+
+    <div class="box-padding">
+        <p>Phone call:</p>
+        <a href="tel:+0123456789">tel:+0123456789</a></br>
+    </div>
+
+    <div class="box-padding">
+        <p>SMS:</p>
+        <a href="sms:+0123456789">sms:+0123456789</a></br>
+    </div>
+
+    <div class="box-padding">
+        <p>Map point:</p>
+        <a href="geo:22.3113907,70.7763053">geo:22.3113907,70.7763053</a></br>
+    </div>
+
+    <div class="box-padding">
+        <p>Map search:</p>
+        <a href="geo:0,0?q=India">geo:0,0?q=India</a></br>
+    </div>
+
+</div>
+
+<div class="cardview">
+    <div class="box-padding">
+        <h1>Links</h1>
+        <p>URL links can be opened in internal webview or in external browser. you can easily customize rules for opening links.</p>
+    </div>
+    <div class="box-padding">
+        <p>For example following link is opened internally</p>
+    </div>
+    <a href="https://android.com/?target=webview">https://android.com/?target=webview</a></br>
+    <div class="box-padding">
+        <p>For example following link is opened externally</p>
+    </div>
+    <a href="https://android.com/?target=blank">https://android.com/?target=blank</a></br>
+    <div class="box-padding">
+        <p>Youtube video url is opened in external app</p>
+    </div>
+    <a href="https://www.youtube.com/watch?v=5aYSxW1e638">Youtube Video</a></br>
+    <div class="box-padding">
+        <p>Google play url is opened in external app</p>
+    </div>
+    <a href="https://play.google.com/store/apps/details?id=com.waterify.drinkwaterreminder">Waterify</a></br>
+</div>
+
+</body>
+
+</html>
