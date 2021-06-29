@@ -421,7 +421,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
             body: Builder(builder: (BuildContext context) {
               return WebView(
                 // to load web page url
-                initialUrl: 'https://osho.hyperthinksys.in/',
+                initialUrl: 'https://oshogosho.com/',
                 javascriptMode: JavascriptMode.unrestricted,
                 onWebViewCreated: (WebViewController webViewController) {
                   _controller = webViewController;
